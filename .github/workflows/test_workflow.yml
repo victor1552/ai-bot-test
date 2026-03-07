@@ -1,0 +1,13 @@
+name: Test on Push
+on: [push]
+jobs:
+  test_code:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Run test script
+      run: python main.py
