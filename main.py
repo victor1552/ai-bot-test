@@ -1,1 +1,1 @@
-print("Hello" + 32)
+print("Hello" + str(32))
